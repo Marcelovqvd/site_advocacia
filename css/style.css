@@ -1,0 +1,117 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+h2 {
+font-size: 36px;
+font-family: raleway, sans-serif;
+letter-spacing:0.05em;
+margin: 50px auto;
+}
+
+
+h2::after {
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background: #82692D;
+  margin: 10px auto;
+}
+
+
+
+.header {
+  width: 100%;
+  background: rgb(232, 232, 232);
+  border-bottom: 4px solid rgb(211, 206, 170);
+}
+
+.header .lista {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.header .lista li {
+  margin: 20px;  
+}
+
+.header .lista li a {
+  font-size: 20px;
+  color: rgb(84,84, 84);
+  padding: 20px;
+  text-decoration: none;
+}
+
+.header .logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.escritorio {
+  background-image: url(../imgs/fachada.jpg);  
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid rgb(211, 206, 170);
+}
+
+.interna1 {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 380px;
+  left: 520px;
+  background: rgba(211, 206, 170, 0.6);
+  
+}
+
+.interna2 {
+  border: 3px solid #82692D;
+  background: rgba(211, 206, 170, 0.6);
+  width: 400px;
+  height: 200px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.interna2 p {
+  color: #605537;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;  
+  letter-spacing: 1px
+}
+
+.profissionais {
+  display: block;
+}
+
+
+.profissionais .lista {
+  margin-bottom: 50px;
+}
+
+.profissionais .lista li {
+  color: rgb(84,84, 84);
+}
+
+
+.areas {
+  display: block;
+  background: #E7E8D1;
+}
