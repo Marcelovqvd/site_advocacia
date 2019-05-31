@@ -6,11 +6,10 @@
 
 h2 {
 font-size: 36px;
-font-family: raleway, sans-serif;
+font-family: 'Raleway', sans-serif;
 letter-spacing:0.05em;
 margin: 50px auto;
 }
-
 
 h2::after {
   display: block;
@@ -20,8 +19,6 @@ h2::after {
   background: #82692D;
   margin: 10px auto;
 }
-
-
 
 .header {
   width: 100%;
@@ -45,6 +42,7 @@ h2::after {
   color: rgb(84,84, 84);
   padding: 20px;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header .logo {
@@ -101,7 +99,6 @@ h2::after {
   display: block;
 }
 
-
 .profissionais .lista {
   margin-bottom: 50px;
 }
@@ -110,8 +107,25 @@ h2::after {
   color: rgb(84,84, 84);
 }
 
-
 .areas {
-  display: block;
   background: #E7E8D1;
+  height: 500px;
+}
+
+.areas h2 {
+  text-align: center;
+  margin: 0 ;
+  padding: 50px;
+}
+
+.areas ul {
+  display: grid;
+  grid-template-columns: 500px;
+}
+
+.areas ul li {
+  font-size: 19px;
+  font-family: 'Barlow', sans-serif;
+  color: #29210f;
+  padding: 20px;
 }
