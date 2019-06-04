@@ -112,15 +112,18 @@ h2::after {
   height: 500px;
 }
 
+.areas .container {
+  align-items: center; 
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
 .areas h2 {
   text-align: center;
   margin: 0 ;
   padding: 50px;
-}
-
-.areas ul {
-  display: grid;
-  grid-template-columns: 500px;
 }
 
 .areas ul li {
@@ -128,4 +131,16 @@ h2::after {
   font-family: 'Barlow', sans-serif;
   color: #29210f;
   padding: 20px;
+}
+
+.localizacao .container {
+  display: block;
+}
+
+.localizacao img {
+  height: 100vh;
+}
+
+.localizacao h2 {
+  text-align: center;
 }
