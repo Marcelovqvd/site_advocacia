@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+  <script src="js/libs/modernizr.custom.45655.js"></script>
 </head>
 <body>
   <header class="header">
@@ -64,6 +65,28 @@
     <div class="container">
       <h2>Entre em contato</h2>
     </div>
+    <form action="enviar.php" method="post" name="form" class="formphp">
+      <div class="container">
+      <label for="nome">Nome</label>
+      <input id="nome" name="nome" type="text">
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="text">
+      <label for="telefone">Telefone</label>
+      <input id="telefone" name="telefone" type="text">
+  
+      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+      <input type="text" class="nao-aparece" name="leaveblank">
+      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+      <input type="text" class="nao-aparece" name="dontchange" value="http://">
+  
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem"></textarea>
+  
+      <button id="enviar" name="enviar" type="submit">Enviar</button>
+      </div>
+  
+    </form>
+  
   </section>
 
   <footer class="footer">
@@ -73,5 +96,10 @@
     <p>São Paulo, SP</p>
   </footer>
 
+  	<!-- JavaScript -->
+	<script src="js/libs/jquery-1.11.2.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<!-- JavaScript -->
  </body>
 </html>

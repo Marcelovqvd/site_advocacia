@@ -144,3 +144,40 @@ h2::after {
 .localizacao h2 {
   text-align: center;
 }
+
+.contato {
+  background: #E7E8D1;
+  
+}
+
+form label {
+  font-size: 19px;
+  font-family: 'Barlow', sans-serif;
+  color: #29210f;
+  padding: 5px;
+}
+
+form input {
+  width: 350px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+form .container {
+  flex-direction: column;
+}
+
+form textarea {
+ width: 700px;
+ height: 200px;
+}
+
+form button {
+  margin: 20px 0;
+  width: 100px;
+  font-size: 19px;
+  font-family: 'Barlow', sans-serif;
+  color: #29210f;
+  padding: 5px
+  
+}
