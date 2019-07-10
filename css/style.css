@@ -29,31 +29,54 @@ h2::after {
 .header .lista {
   display: flex;  
   align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-
-.header .lista li {
-  margin: 20px;  
+  margin: 30px auto;
 }
 
 .header .lista li a {
   font-size: 20px;
-  color: rgb(84,84, 84);
-  padding: 20px;
+  color: #000;
+  font-weight: bold;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.header .lista li a:hover {
+  color: rgb(27, 7, 7);
+  border: 1px solid black;
 }
 
 .header .logo {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 10px auto;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
+.header .logo img {
+  height: 250px;
+  border: 1px solid black;
+}
+
+.ativo {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {    
+    width: 200px;
+  }
+  
+  to {    
+    width: 500px;  
+  }
+}
+
+
 .escritorio {
-  background-image: url(../imgs/fachada.jpg);  
+  background-image: url(../imgs/Escritorio/escritorio1.png);  
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -96,71 +119,88 @@ h2::after {
 }
 
 .profissionais {
-  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+.profissionais h2 {
+  text-align: center;
+  margin: 0 ;
+  padding: 50px;
+}
+
+.profissionais ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.profissionais ul li img {
+  width: 220px;
+  height: 220px;
+  padding: 20px;
+  border: 10px solid #000;
+}
+
+.profissionais ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.profissionais ul li h3 {
+  font-size: 24px;
+  margin: 20px 0;
 }
 
 .profissionais .lista {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
-.profissionais .lista li {
-  color: rgb(84,84, 84);
+.anima {
+  margin: 50px;
 }
 
 .areas {
-  background: #E7E8D1;
-  height: 500px;
+  background-image: url(../imgs/Escritorio/escritorio4.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  border-bottom: 4px solid rgb(211, 206, 170);
 }
 
 .areas .container {
-  align-items: center; 
-  justify-content: center;
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: baseline;
 }
 
 .areas h2 {
   text-align: center;
   margin: 0 ;
   padding: 50px;
+  color: #fff;
 }
 
-.areas ul li {
-  font-size: 19px;
+.areas ul li p {
+  font-size: 24px;
   font-family: 'Barlow', sans-serif;
   color: #29210f;
   padding: 20px;
+  color: #fff;  
+  margin: 10px;
+  border-bottom: 1px solid white;
+  border-right: 5px solid white;
 }
 
-.localizacao .container {
-  display: block;
-}
-
-.localizacao img {
-  height: 100vh;
-}
-
-.localizacao h2 {
-  text-align: center;
-}
 
 .contato {
-  background: #E7E8D1;
-  
-}
-
-form label {
-  font-size: 19px;
-  font-family: 'Barlow', sans-serif;
-  color: #29210f;
-  padding: 5px;
+  height: 100vh;
 }
 
 form input {
   width: 350px;
   padding: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 form .container {
@@ -168,8 +208,8 @@ form .container {
 }
 
 form textarea {
- width: 700px;
- height: 200px;
+ width: 400px;
+ height: 100px;
 }
 
 form button {
@@ -179,5 +219,88 @@ form button {
   font-family: 'Barlow', sans-serif;
   color: #29210f;
   padding: 5px
-  
+}
+
+
+.footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.footer h2 {
+  flex-direction: column;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.05em;
+  padding: 10px 0;
+}
+
+.contato_dados {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.contato_dados p {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px 0;
+  font-family: sans-serif;
+}
+
+.contato_dados ul {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+
+.contato_dados ul img {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+  padding: 10px 0;
+}
+
+
+.back-to-top {
+  bottom: 8px;
+  position: fixed; 
+  right: 0;
+  bottom: 0;
+  z-index: 120;
+}
+
+.back-to-top img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+
+
+ 
+
+.js-scroll {
+  opacity: 1;
+  transform: translate3d(-30px, 0, 0);
+  transition: 3s;
+}
+
+.js-scroll.active {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }

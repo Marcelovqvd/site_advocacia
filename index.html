@@ -1,105 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Themis Advocacia</title>
+  <title>HHM advogados associados</title>
   <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
-  <script src="js/libs/modernizr.custom.45655.js"></script>
 </head>
-<body>
+
+<body id="body">
+
   <header class="header">
-    <img src="imgs/logo.jpg" alt="themis" class="logo">
-    <div class="container">
-      <ul class="lista">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Escritório</a></li>
-        <li><a href="#">Profissionais</a></li>
-        <li><a href="#">Áreas de atuação</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+    <div class="logo container">
+      <img src="imgs/logo.png" alt="hhm">
     </div>
+      <div class="container">
+        <ul class="lista">
+          <li><a href="#">Home</a></li>
+          <li><a href="#escritorio">Escritório</a></li>
+          <li><a href="#profissionais">Equipe</a></li>
+          <li><a href="#areas">Áreas de atuação</a></li>
+          <li><a href="#contato">Deixe sua mensagem</a></li>
+          <li><a href="#footer">Contato</a></li>
+        </ul>
+      </div>
+   
   </header>
 
-  <section class="escritorio">
-    <div class="interna1">
-      <div class="interna2">
-        <p>Venha nos conhecer</p>
-      </div>
-    </div>
+  <section class="escritorio" id="escritorio"></section>
+
+  <section class="profissionais" id="profissionais">
+    <h2>Nossa Equipe</h2>
+    <ul class="lista">
+      <li>
+        <img src="../site_advocacia/imgs/chuck.jpg" alt="Chuck McGill">
+        <h3>Chuck McGill</h3>
+      </li>
+      <li>
+        <img src="../site_advocacia/imgs/howard.jpg" alt="Howard Hamlin">
+        <h3>Howard Hamlin</h3>
+      </li>
+      <li>
+        <img src="../site_advocacia/imgs/kim.jpg" alt="Kim Wexler">
+        <h3>Kim Wexler</h3>
+      </li>
+      <li>
+        <img src="../site_advocacia/imgs/saul.jpg" alt="Jimmy McGill">
+        <h3>Jimmy McGill</h3>
+      </li>
+    </ul>
   </section>
 
-  <section class="areas">
+  <section class="areas" id="areas">
     <h2>Áreas de Atuação</h2>
-    <div class="container">
-        <ul>
-          <li>Família e sucessões</li>
-          <li>Consumidor</li>
-          <li>Indenizações</li>
-          <li>Contratos</li>
-          <li>Médico</li>
-        </ul>
-        <ul>
-          <li>Assessoria</li>
-          <li>Trabalhista</li>
-          <li>Imobiliário</li>
-          <li>Tributário</li>
-        </ul>
-      </div>
+    <div class="container js-scroll">
+      <ul>
+        <li>
+          <p>Família e sucessões</p>
+        </li>
+        <li>
+          <p>Consumidor</p>
+        </li>
+        <li>
+          <p>Indenizações</p>
+        </li>
+        <li>
+          <p>Contratos</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p>Assessoria</p>
+        </li>
+        <li>
+          <p>Trabalhista</p>
+        </li>
+        <li>
+          <p>Imobiliário</p>
+        </li>
+        <li>
+          <p>Tributário</p>
+        </li>
+      </ul>
     </div>
   </section>
-  
-<section class="localizacao">
-  <div class="container">
-    <h2>Onde Estamos</h2>
-    <img src="../site_advocacia/imgs/mapa.png" alt="mapa">
-  </div>
-</section>
 
-  <section class="contato">
+
+  <section class="contato" id="contato">
     <div class="container">
-      <h2>Entre em contato</h2>
+      <h2>Deixe sua mensagem</h2>
     </div>
-    <form action="enviar.php" method="post" name="form" class="formphp">
+    <form action="enviar.php" method="POST" name="form" class="formphp">
       <div class="container">
-      <label for="nome">Nome</label>
-      <input id="nome" name="nome" type="text">
-      <label for="email">E-mail</label>
-      <input id="email" name="email" type="text">
-      <label for="telefone">Telefone</label>
-      <input id="telefone" name="telefone" type="text">
-  
-      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-      <input type="text" class="nao-aparece" name="leaveblank">
-      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
-      <input type="text" class="nao-aparece" name="dontchange" value="http://">
-  
-      <label for="mensagem">Mensagem</label>
-      <textarea name="mensagem" id="mensagem"></textarea>
-  
-      <button id="enviar" name="enviar" type="submit">Enviar</button>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="seu nome aqui" required>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="text" placeholder="seu email aqui" required>
+        <label for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" type="text">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+        <button id="enviar" name="enviar" type="submit">Enviar</button>
       </div>
-  
     </form>
-  
   </section>
 
-  <footer class="footer">
-    <h2>Themis advogados associados</h2>
-    <p>endereço:</p>
-    <p> rua Brasil, nº 101010</p>
-    <p>São Paulo, SP</p>
+
+  <footer class="footer" id="footer">
+    <h2 class="container">Hamlin, Hamlin & McGill advogados associados</h2>
+    <div class="contato_dados container">
+      <p>Telefone: 11 123456789</p>
+      <p>advocaciahhm@advocacia.com</p>
+      <p>Rua Brasil, nº 00, São Paulo/SP, Brasil</p>
+      <ul>
+        <li><a href="http://facebook.com" target="_blank"><img src="imgs/redes-sociais/facebook.png"></a></li>
+        <li><a href="http://instagram.com" target="_blank"><img src="imgs/redes-sociais/instagram.png"></a></li>
+        <li><a href="http://twitter.com" target="_blank"><img src="imgs/redes-sociais/twitter.png"></a></li>
+      </ul>
+      <p>*Trata-se de website com conteúdo fictício para fins de estudo e portfólio, baseado na série de TV "Better Call
+        Saul".</p>
+    </div>
   </footer>
 
-  	<!-- JavaScript -->
-	<script src="js/libs/jquery-1.11.2.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
-	<!-- JavaScript -->
- </body>
+  <div class="back-to-top">
+    <a href="#body"><img src="imgs/seta.png"></a>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
 </html>
