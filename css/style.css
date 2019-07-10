@@ -279,8 +279,42 @@ form button {
 }
 
 
-
+.curriculo {
+  padding: 15px;
+  font-size: 20px;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 122;
+  width: 180px;
+  height: 60px;
+  background: #506084;
+  color: #fff; 
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
  
+.curriculo p {
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  
+}
+
+.curriculo a {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ECECEC;
+  padding: 10px;
+}
+
+.curriculo a:hover {
+   color: #000;
+}
 
 .js-scroll {
   opacity: 1;
