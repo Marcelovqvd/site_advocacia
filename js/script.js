@@ -20,10 +20,10 @@ function initScrollSuave() {
 initScrollSuave();
 
 
+
+
 // _____________________________ //
-
-
-
+//animação do logo
 
 function move() {
   const logo = document.querySelector('.logo img');
@@ -37,30 +37,34 @@ function move() {
 move();
 
 
+
+
+
 // _____________________________ //
 
+//anima seção áreas de atuação
+
+  //O método Element.getBoundingClientRect() 
+  //retorna o tamanho de um elemento e sua posição relativa ao viewport.
 
 
+const section = document.querySelector('.areas');
 
-function moveProfissionais() {
-  const profissionais = document.querySelectorAll('.profissionais ul img');
-  const imagem = profissionais.getBoundingClientRect().top;
-  const partWindow = window.innerHeight * 0.2;
-  const sectionVisible = (imagem - partWindow) < 0;
-  if(sectionVisible) {  
-  profissionais.forEach(profissional => {
-    profissional.classList.add('anima');
-  })
+function animaScroll() {
+  const sectionTop = section.getBoundingClientRect().top;
+  console.log(sectionTop);
+  if(sectionTop < 1) {
+    section.classList.add('anima');
   } else {
-    profissionais.forEach(profissional => {
-      profissional.classList.remove('anima');
-    })
-  };
+    section.classList.remove('anima');
+  }
 }
 
-moveProfissionais(); 
 
-window.addEventListener('scroll', moveProfissionais);
+animaScroll();
+
+window.addEventListener('scroll', animaScroll);
+
 
 
 

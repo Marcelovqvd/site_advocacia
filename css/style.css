@@ -183,14 +183,20 @@ h2::after {
 }
 
 .areas ul li p {
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Barlow', sans-serif;
   color: #29210f;
   padding: 20px;
   color: #fff;  
   margin: 10px;
+
+}
+
+
+.areas.anima ul p {   
+  transition: 1s; 
   border-bottom: 1px solid white;
-  border-right: 5px solid white;
+  font-size: 24px;
 }
 
 
@@ -317,27 +323,4 @@ form button {
 
 .curriculo a:hover {
    color: #000;
-}
-
-.js-scroll {
-  opacity: 1;
-  transform: translate3d(-30px, 0, 0);
-  transition: 3s;
-}
-
-.js-scroll.active {
-  opacity: 0;
-  transform: translate3d(0, 0, 0);
-}
-
-
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: translate3d(-30px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
 }
