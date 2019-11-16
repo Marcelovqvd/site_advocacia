@@ -6,3 +6,10 @@ initScrollSuave();
 move();
 animaAreaScroll();
 
+
+const teste = document.querySelector('#escritorio');
+console.log(teste.dataset);
+
+
+const agora = new Date();
+console.log(agora.getDay()); 
